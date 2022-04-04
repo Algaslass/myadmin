@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>My admin</title>
+</head>
+
+<body>
+    <section>
+        <nav class="blue">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo">MyAdmin</a>
+
+                    <ul class="right hide-on-med-and-down">
+                        <li class="active"><a href="index.html">Dashdoard</a></li>
+                        <li><a href="profil.html">posts</a></li>
+                        <li><a href="category.html">Categories</a></li>
+                        <li><a href="comments.html">Comments</a></li>
+                        <li><a href="users.html">Users</a></li>
+                        <li><a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i
+                                    class="material-icons">menu</i></a></li>
+                    </ul>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i
+                            class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="moi.png">
+                    </div>
+                    <a href="#user"><img class="circle" src="moi.png"></a>
+                    <a href="#name"><span class="dark-text name">Algabid-CS</span></a>
+                    <a href="#email"><span class="dark-text email">Algaslass@gmail.com</span></a>
+                </div>
+            </li>
+            <li class="active"><a href="index.html">Dashdoard</a></li>
+            <li><a href="profil.html">posts</a></li>
+            <li><a href="category.html">Categories</a></li>
+            <li><a href="comments.html">Comments</a></li>
+            <li><a href="users.html">Users</a></li>
+        </ul>
+    </section>
+
+    <!--cards-->
+    <div class="row grey lighten-3">
+        <div class="col s12 m6 l3">
+            <div class="card blue white-text">
+                <div class="card-content center-align">
+                    <i class="material-icons medium">sentiment_very_satisfied</i>
+                    <h5>Monthly Visitors</h5>
+                    <h4>35900</h4>
+                    <div class="progress">
+                        <div class="determinate white" style="width:40% ;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card blue-text">
+                <div class="card-content center-align">
+                    <i class="material-icons medium">edit</i>
+                    <h5>Blog Post</h5>
+                    <h4>207</h4>
+                    <div class="progress">
+                        <div class="determinate blue" style="width:25% ;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card blue white-text">
+                <div class="card-content center-align">
+                    <i class="material-icons medium">mode_comment</i>
+                    <h5>Comments</h5>
+                    <h4>2300</h4>
+                    <div class="progress">
+                        <div class="determinate white" style="width:40% ;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m6 l3">
+            <div class="card  blue-text">
+                <div class="card-content center-align">
+                    <i class="material-icons medium">people</i>
+                    <h5>Users</h5>
+                    <h4>410</h4>
+                    <div class="progress">
+                        <div class="determinate blue" style="width:12% ;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--graphic & comment-->
+
+    <div class="container-fluid blue lighten-5">
+        <div class="row">
+            <div class="col s12 m8" style="margin-top: 20px;">
+                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+                <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+            </div>
+            <div class="col s12 m4">
+                <ul class="collection with-header">
+                    <li class="collection-header" style="text-overflow: ellipsis;">
+                        <h4>Latest comments</h4>
+                    </li>
+
+                    <li class="collection-item avatar">
+                        <img src="av1.jpeg" alt="" class="circle">
+                        <span class="title">Mr Stark Iron</span>
+                        <p class="overflow-ellipsis">Lorem ipsum dolor sit, amet consectetur .
+                        </p>
+                        <a href="#" class="teal-text"> Approve</a> | <a href="#" class="red-text">Deny</a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <img src="av2.jpeg" alt="" class="circle">
+                        <span class="title">Cap America</span>
+                        <p class="overflow-ellipsis">Lorem ipsum dolor sit, amet consectetur .
+                        </p>
+                        <a href="#" class="teal-text"> Approve</a> | <a href="#" class="red-text">Deny</a>
+                    </li>
+                    <li class="collection-item avatar">
+                        <img src="av3.png" alt="" class="circle">
+                        <span class="title">Peter Parker</span>
+                        <p class="overflow-ellipsis">Lorem ipsum dolor sit, amet consectetur
+                        </p>
+                        <a href="#" class="teal-text"> Approve</a> | <a href="#" class="red-text">Deny</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid grey lighten-5">
+        <div class="row">
+            <div class="col s12 m8">
+                <div class="card" style="padding: 10px;">
+                    <table class="striped">
+                        <p>Recent post</p>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Category</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Post One</td>
+                                <td>Web development</td>
+                                <td><button class="btn blue white-text">Details</button></td>
+                            </tr>
+                            <tr>
+                                <td>Post two</td>
+                                <td>Graphic Design</td>
+                                <td><button class="btn blue white-text">Details</button></td>
+                            </tr>
+                            <tr>
+                                <td>Post Three</td>
+                                <td>Web development</td>
+                                <td><button class="btn blue white-text">Details</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col s12 m4">
+                <h4>Quick Todos</h4>
+                <div class="input-field">
+                    <input type="text" placeholder="Add Todo" class="validate">
+                </div>
+                <div class="collection">
+                    <div class="collection-item " style="height: 50px;">
+                        <div class="row">
+
+                            <div class="col s11 col-wrapper">
+                                <span class="title">Todo One</span>
+                                </span>
+                            </div>
+                            <div class="col s1 white">
+                                <i class="material-icons white teal-text">close</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-item " style="height: 50px;">
+                        <div class="row">
+
+                            <div class="col s11 col-wrapper">
+                                <span class="title">Todo Two</span>
+                                </span>
+                            </div>
+                            <div class="col s1">
+                                <i class="material-icons white teal-text">close</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-item " style="height: 50px;">
+                        <div class="row">
+
+                            <div class="col s11 col-wrapper">
+                                <span class="title">Todo Three</span>
+                                </span>
+                            </div>
+                            <div class="col s1">
+                                <i class="material-icons white teal-text">close</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--footer-->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+            <div class="large material-icons">mode_edit</div>
+        </a>
+        <ul>
+            <li><a href="#modal1" class="btn-floating modal-trigger"><i class="material-icons blue">mode_edit</i></a>
+            </li>
+            <li><a href="#modal2" class="btn-floating modal-trigger"><i class="material-icons blue">folder</i></a></li>
+            <li><a href="#modal3" class="btn-floating modal-trigger "><i class="material-icons blue">people_alt</i></a>
+            </li>
+
+        </ul>
+    </div>
+
+
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <h2>Add Post</h2>
+            <form action="">
+                <div class="input-field">
+                    <input type="text" placeholder="Title" class="validate">
+                </div>
+                <div class="input-field col s12">
+                    <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Developper</option>
+                        <option value="2">Gamer</option>
+                        <option value="3">Spy</option>
+                        <option value="2">Artist</option>
+                        <option value="3">baller</option>
+                    </select>
+                    <label>Materialize Select</label>
+                </div>
+
+                <textarea name="text_editor" id="text-editor"></textarea>
+                <script>
+                    CKEDITOR.replace('text_editor');
+                </script>
+
+
+                <input type="submit" class="btn">
+
+            </form>
+        </div>
+    </div>
+
+
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <h2>Add Category</h2>
+            <div class="input-field">
+                <input type="text" placeholder="Titre" class="validate">
+            </div>
+            <input type="submit" class="btn">
+        </div>
+    </div>
+
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <h2>Add User</h2>
+            <div class="input-field">
+                <input type="text" placeholder="Name" class="validate">
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Email" class="validate">
+            </div>
+            <div class="input-field">
+                <input type="password" placeholder="Pasword" class="validate">
+            </div>
+            <div class="input-field">
+                <input type="password" placeholder="Confirm Password" class="validate">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <input type="submit" class="btn">
+        </div>
+    </div>
+
+
+    <div class="row ">
+        <div class="page-footer blue" style="padding: 30px; position: absolute; width: 100%; right: 0;">
+            <p class="center-align">MyAdmin By Algabid-CS </br>
+                 Copyright © 2022</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            //NavBar
+            var sidenav = document.querySelectorAll('.sidenav');
+            M.Sidenav.init(sidenav, {
+
+            });
+
+        });
+
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                theme: "light2",
+                title: {
+                    text: "Daily visitors"
+                },
+                data: [{
+                    type: "line",
+                    indexLabelFontSize: 16,
+                    dataPoints: [
+                        { y: 450 },
+                        { y: 414 },
+                        { y: 520, indexLabel: "highest", markerColor: "red", markerType: "triangle" },
+                        { y: 460 },
+                        { y: 450 },
+                        { y: 500 },
+                        { y: 480 },
+                        { y: 480 },
+                        { y: 410, indexLabel: "lowest", markerColor: "DarkSlateGrey", markerType: "cross" },
+                        { y: 500 },
+                        { y: 480 },
+                        { y: 510 }
+                    ]
+                }]
+            });
+            chart.render();
+
+
+
+        }
+
+    
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+    </script>
+     <script>CKEDITOR.replace( 'myfield' );
+
+        var textarea = document.body.appendChild( document.createElement( 'textarea' ) );
+        CKEDITOR.replace( text-editor );
+        
+        </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>tinymce.init({ selector:'textarea' });</script>
+</body>
+
+</html>

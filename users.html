@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <title>My admin</title>
+</head>
+
+<body class="grey lighten-2">
+  <!--Navbar-->
+  <section>
+    <nav class="blue">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">MyAdmin</a>
+
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Dashdoard</a></li>
+            <li><a href="profil.html">posts</a></li>
+            <li><a href="category.html">Categories</a></li>
+            <li><a href="comments.html">Comments</a></li>
+            <li class="active"><a href="users.html">Users</a></li>
+            <li><a href="#" data-target="mobile-demo" class="sidenav-trigger show-on-large"><i
+                  class="material-icons">menu</i></a></li>
+          </ul>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="moi.png">
+          </div>
+          <a href="#user"><img class="circle" src="moi.png"></a>
+          <a href="#name"><span class="dark-text name">Algabid-CS</span></a>
+          <a href="#email"><span class="dark-text email">Algaslass@gmail.com</span></a>
+        </div>
+      </li>
+      <li class="active"><a href="index.html">Dashdoard</a></li>
+      <li><a href="profil.html">posts</a></li>
+      <li><a href="category.html">Categories</a></li>
+      <li><a href="comments.html">Comments</a></li>
+      <li><a href="users.html">Users</a></li>
+    </ul>
+    
+  </section>
+
+  <div class="row ">
+    <div class="row" style="max-width: 1000px;">
+      <table class="striped  calage white" >
+          <h5>Users</h5>
+          <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Registred</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <td>
+                 <div class="avatar valign-wrapper">
+                     <img class="circle" src="av1.jpeg" width="50" alt="">
+                     <span class="title" style="margin-left: 15px;">Mr Stark Iron</span>
+                 </div> 
+              </td>
+              <td>Ironman@gmail.com</td>
+              <td>january 1; 2022</td>
+              <td><a href="#" class="btn blue">DETAILs</a></td>
+            </tr>
+            
+            <tr>
+              <td>
+                 <div class="avatar valign-wrapper">
+                     <img class="circle" src="av2.jpeg" width="50" alt="">
+                     <span class="title" style="margin-left: 15px;">Cap America</span>
+                 </div> 
+              </td>
+              <td>capAmerica@gmail.com</td>
+              <td>january 1; 2022</td>
+              <td><a href="#" class="btn blue">DETAILs</a></td>
+            </tr>
+            
+            <tr>
+              <td>
+                 <div class="avatar valign-wrapper">
+                     <img class="circle" src="av3.png" width="50" alt="">
+                     <span class="title" style="margin-left: 15px;">Peter parker</span>
+                 </div> 
+              </td>
+              <td>Spiderman@gmail.com</td>
+              <td>february 1; 2022</td>
+              <td><a href="#" class="btn blue">DETAILs</a></td>
+            </tr>
+            
+            <tr>
+              <td>
+                 <div class="avatar valign-wrapper">
+                     <img class="circle" src="av4.png" width="50" alt="">
+                     <span class="title" style="margin-left: 15px;">Batman Gotham</span>
+                 </div> 
+              </td>
+              <td>Batman@gmail.com</td>
+              <td>february 1; 2022</td>
+              <td><a href="#" class="btn blue">DETAILs</a></td>
+            </tr>
+            
+            <tr>
+              <td>
+                 <div class="avatar valign-wrapper">
+                     <img class="circle" src="av5.png" width="50" alt="">
+                     <span class="title" style="margin-left: 15px;">Deadpool</span>
+                 </div> 
+              </td>
+              <td>Deadpool@gmail.com</td>
+              <td>April 1; 2022</td>
+              <td><a href="#" class="btn blue">DETAILs</a></td>
+            </tr>
+            
+            <tr>
+              <td>
+                 <div class="avatar valign-wrapper">
+                     <img class="circle" src="av6.jpeg" width="50" alt="">
+                     <span class="title" style="margin-left: 15px;">Thor Ragnarok</span>
+                 </div> 
+              </td>
+              <td>Thor@gmail.com</td>
+              <td>April 1; 2022</td>
+              <td><a href="#" class="btn blue">DETAILs</a></td>
+            </tr>
+            
+          </tbody>
+          
+        </table>
+        <ul class="pagination">
+          <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+          <li class="active  blue"><a href="#!">1</a></li>
+          <li class="waves-effect"><a href="#!">2</a></li>
+          <li class="waves-effect"><a href="#!">3</a></li>
+          <li class="waves-effect"><a href="#!">4</a></li>
+          <li class="waves-effect"><a href="#!">5</a></li>
+          <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+        </ul>
+    </div>
+
+      
+      
+  </div>
+  
+
+  <div class="fixed-action-btn">
+      <a  class="btn-floating btn-large red">
+        <div class="large material-icons">mode_edit</div>
+      </a>
+      <ul>
+        <li><a href="#modal1" class="btn-floating modal-trigger"><i class="material-icons blue">mode_edit</i></a></li>
+  <li><a href="#modal2" class="btn-floating modal-trigger"><i class="material-icons blue">folder</i></a></li>
+  <li><a href="#modal3" class="btn-floating modal-trigger "><i class="material-icons blue">people_alt</i></a></li>
+  
+      </ul>
+    </div>
+
+
+    <div class="modal" id="modal1">
+      <div class="modal-content">
+        <h2>Add Post</h2>
+        <form action="">
+          <div class="input-field">
+            <input type="text" placeholder="Title" class="validate">
+          </div>
+          <div class="input-field col s12">
+            <select>
+              <option value="" disabled selected>Choose your option</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+            <label>Materialize Select</label>
+          </div>
+          
+
+          <textarea name="text_editor"></textarea>
+  <script>
+      CKEDITOR.replace( 'text_editor' );
+  </script>
+
+          
+
+          <input type="submit" class="btn">
+
+        </form>
+      </div>
+    </div>
+
+
+    <div class="modal" id="modal2">
+      <div class="modal-content">
+        <h2>Add Category</h2>
+        <div class="input-field">
+          <input type="text" placeholder="Titre" class="validate">
+        </div>
+        <input type="submit" class="btn">
+      </div>
+    </div>
+
+    <div class="modal" id="modal3">
+      <div class="modal-content">
+        <h2>Add User</h2>
+        <div class="input-field">
+          <input type="text" placeholder="Name" class="validate">
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="Email" class="validate">
+        </div>
+        <div class="input-field">
+          <input type="password" placeholder="Pasword" class="validate">
+        </div>
+        <div class="input-field">
+          <input type="password" placeholder="Confirm Password" class="validate">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <input type="submit" class="btn">
+      </div>
+    </div>
+
+
+
+
+
+
+
+<div class="row" style="width: 100%;">
+  <div class="page-footer blue" style="padding: 30px; position: absolute; width: 100%; bottom: 0; right: 0;">
+    <p class="center-align">MyAdmin By Algabid-CS </br>
+       Copyright © 2022</p>
+  </div>
+</div>
+
+
+
+  
+
+
+
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      //NavBar
+      var sidenav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sidenav, {
+
+      });
+
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.fixed-action-btn');
+            var instances = M.FloatingActionButton.init(elems);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('select');
+            var instances = M.FormSelect.init(elems);
+        });
+  </script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <script>tinymce.init({ selector:'textarea' });</script>
+</body>
+
+</html>
